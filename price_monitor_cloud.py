@@ -203,6 +203,12 @@ def check_all():
                 send_email(subject, body)
         else:
             print(f"[{now()}] 🆕 {name}: ¥{cur_price}（原价¥{src_price}）")
+            # 首次记录也检查价格阈值
+            threshold = PRICE_ALERT.get(gid)
+            if threshold and cur_price < threshold:
+                subject = f"食时-{name[:10]}-价格低于¥{threshold}"
+                body = name + "\n当前价格：¥" + str(cur_price) + "\n首次检测即低于目标价¥" + str(threshold)
+                send_email(subject, body)
 
         history[gid] = {
             "name": name,
@@ -216,9 +222,32 @@ def check_all():
 
 
 
+def export_data():
+    """把当前价格数据导出为 data.json 供网页展示"""
+    history = load_history()
+    output = {
+        "updated_at": now(),
+        "items": []
+    }
+    for gid, info in history.items():
+        threshold = PRICE_ALERT.get(gid)
+        output["items"].append({
+            "id": gid,
+            "name": info["name"],
+            "price": info["price"],
+            "priceSource": info["priceSource"],
+            "cutAmt": info.get("cutAmt", 0),
+            "last_checked": info["last_checked"],
+            "threshold": threshold,
+            "below_threshold": threshold is not None and info["price"] < threshold,
+        })
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(output, f, ensure_ascii=False, indent=2)
+
 def main():
     print(f"[{now()}] 开始检查...")
     check_all()
+    export_data()
     print(f"[{now()}] 检查完成")
 
 if __name__ == "__main__":
