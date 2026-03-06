@@ -2,8 +2,8 @@ name: Price Monitor
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 每5分钟运行一次
-  workflow_dispatch:        # 允许手动触发
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 jobs:
   monitor:
@@ -23,3 +23,11 @@ jobs:
         env:
           EMAIL_AUTH_CODE: ${{ secrets.EMAIL_AUTH_CODE }}
         run: python price_monitor_cloud.py
+
+      - name: Save data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add price_history.json data.json
+          git diff --cached --quiet || git commit -m "update price data"
+          git push
