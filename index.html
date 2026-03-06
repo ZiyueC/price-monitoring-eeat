@@ -214,23 +214,15 @@ async function triggerAction() {
   btn.disabled = true;
   btn.textContent = '⏳ 触发中...';
   try {
-    const res = await fetch(
-      'https://api.github.com/repos/ZiyueC/price-monitoring-eeat/actions/workflows/monitor.yml/dispatches',
-      {
-        method: 'POST',
-        headers: {
-          'Authorization': 'Bearer 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',
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ ref: 'main' })
-      }
-    );
-    if (res.status === 204) {
+    const res = await fetch('https://eateat-motinor.ellerycn.workers.dev/', {
+      method: 'POST'
+    });
+    const data = await res.json();
+    if (data.status === 204) {
       btn.textContent = '✅ 已触发，约30秒后刷新';
       setTimeout(() => { load(); btn.disabled = false; btn.textContent = '🔄 立即更新'; }, 35000);
     } else {
-      btn.textContent = '❌ 触发失败';
+      btn.textContent = '❌ 触发失败 ' + data.status;
       setTimeout(() => { btn.disabled = false; btn.textContent = '🔄 立即更新'; }, 3000);
     }
   } catch(e) {
