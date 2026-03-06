@@ -109,6 +109,19 @@
   .threshold-line { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); margin-top: 0.5rem; }
   .threshold-line span { color: var(--accent-dim); }
   #error { max-width: 900px; margin: 3rem auto; text-align: center; color: var(--muted); }
+  #refreshBtn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 0.4rem 0.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  #refreshBtn:hover { border-color: var(--accent); color: var(--accent); }
+  #refreshBtn:disabled { opacity: 0.4; cursor: not-allowed; }
   .pulse {
     display: inline-block; width: 6px; height: 6px;
     background: var(--green); border-radius: 50%;
@@ -120,6 +133,7 @@
 <body>
 <header>
   <h1>食时 · 砍价监控</h1>
+  <button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button>
   <div id="updated"><span class="pulse"></span>加载中...</div>
 </header>
 <div class="grid" id="grid"></div>
@@ -143,8 +157,13 @@ async function load() {
     if (!res.ok) throw new Error();
     const data = await res.json();
 
+    const now = new Date().toLocaleString('zh-CN', {
+      timeZone: 'Asia/Shanghai', year:'numeric', month:'2-digit', day:'2-digit',
+      hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false
+    });
     document.getElementById('updated').innerHTML =
-      '<span class="pulse"></span>更新于 ' + toBeijing(data.updated_at);
+      '<span class="pulse"></span>价格更新于 ' + toBeijing(data.updated_at) +
+      ' &nbsp;|&nbsp; 页面刷新于 ' + now;
 
     const grid = document.getElementById('grid');
     grid.innerHTML = '';
@@ -188,7 +207,37 @@ async function load() {
 }
 
 load();
-setInterval(load, 60000);
+setInterval(load, 360000);
+
+async function triggerAction() {
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  btn.textContent = '⏳ 触发中...';
+  try {
+    const res = await fetch(
+      'https://api.github.com/repos/ZiyueC/price-monitoring-eeat/actions/workflows/monitor.yml/dispatches',
+      {
+        method: 'POST',
+        headers: {
+          'Authorization': 'token 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',
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ ref: 'main' })
+      }
+    );
+    if (res.status === 204) {
+      btn.textContent = '✅ 已触发，约30秒后刷新';
+      setTimeout(() => { load(); btn.disabled = false; btn.textContent = '🔄 立即更新'; }, 35000);
+    } else {
+      btn.textContent = '❌ 触发失败';
+      setTimeout(() => { btn.disabled = false; btn.textContent = '🔄 立即更新'; }, 3000);
+    }
+  } catch(e) {
+    btn.textContent = '❌ 网络错误';
+    setTimeout(() => { btn.disabled = false; btn.textContent = '🔄 立即更新'; }, 3000);
+  }
+}
 </script>
 </body>
 </html>
