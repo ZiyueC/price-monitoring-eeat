@@ -17,9 +17,7 @@
     --text: #e8e4dc;
     --muted: #666;
   }
-
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   body {
     background: var(--bg);
     color: var(--text);
@@ -27,7 +25,6 @@
     min-height: 100vh;
     padding: 2rem 1rem;
   }
-
   header {
     max-width: 900px;
     margin: 0 auto 2.5rem;
@@ -37,19 +34,8 @@
     justify-content: space-between;
     align-items: flex-end;
   }
-
-  h1 {
-    font-size: 1.6rem;
-    letter-spacing: 0.1em;
-    color: var(--accent);
-  }
-
-  #updated {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--muted);
-  }
-
+  h1 { font-size: 1.6rem; letter-spacing: 0.1em; color: var(--accent); }
+  #updated { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--muted); }
   .grid {
     max-width: 900px;
     margin: 0 auto;
@@ -57,7 +43,6 @@
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1rem;
   }
-
   .card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -66,26 +51,21 @@
     position: relative;
     transition: border-color 0.2s;
   }
-
   .card.alert {
     border-color: var(--accent);
     box-shadow: 0 0 20px rgba(232, 200, 74, 0.08);
   }
-
   .card.alert::before {
-    content: '目标价';
+    content: '已达目标价';
     position: absolute;
-    top: 0.8rem;
-    right: 0.8rem;
+    top: 0.8rem; right: 0.8rem;
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.6rem;
     background: var(--accent);
     color: #000;
     padding: 2px 6px;
     border-radius: 2px;
-    letter-spacing: 0.05em;
   }
-
   .name {
     font-size: 0.82rem;
     color: var(--muted);
@@ -93,14 +73,7 @@
     margin-bottom: 0.8rem;
     padding-right: 3.5rem;
   }
-
-  .price-row {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    margin-bottom: 0.5rem;
-  }
-
+  .price-row { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.6rem; }
   .price {
     font-family: 'JetBrains Mono', monospace;
     font-size: 2rem;
@@ -108,70 +81,62 @@
     color: var(--text);
     letter-spacing: -0.02em;
   }
-
   .price.low { color: var(--accent); }
-
   .price-source {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
     color: var(--muted);
     text-decoration: line-through;
   }
-
-  .meta {
+  .stats {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     color: var(--muted);
     display: flex;
-    gap: 1rem;
-    margin-top: 0.6rem;
-  }
-
-  .threshold-line {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.68rem;
-    color: var(--muted);
+    flex-direction: column;
+    gap: 0.3rem;
     margin-top: 0.4rem;
   }
-
+  .stat-row { display: flex; gap: 0.5rem; align-items: center; }
+  .badge {
+    padding: 1px 6px;
+    border-radius: 2px;
+    font-size: 0.65rem;
+  }
+  .badge.down { background: rgba(78,232,154,0.15); color: var(--green); }
+  .badge.up   { background: rgba(232,90,74,0.15);  color: var(--red); }
+  .badge.cut  { background: rgba(232,200,74,0.12); color: var(--accent-dim); }
+  .threshold-line { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); margin-top: 0.5rem; }
   .threshold-line span { color: var(--accent-dim); }
-
-  #error {
-    max-width: 900px;
-    margin: 3rem auto;
-    text-align: center;
-    color: var(--muted);
-    font-size: 0.9rem;
-  }
-
+  #error { max-width: 900px; margin: 3rem auto; text-align: center; color: var(--muted); }
   .pulse {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    background: var(--green);
-    border-radius: 50%;
-    margin-right: 0.4rem;
-    animation: pulse 2s infinite;
-    vertical-align: middle;
+    display: inline-block; width: 6px; height: 6px;
+    background: var(--green); border-radius: 50%;
+    margin-right: 0.4rem; animation: pulse 2s infinite; vertical-align: middle;
   }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.3; }
-  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
 </style>
 </head>
 <body>
-
 <header>
   <h1>食时 · 砍价监控</h1>
   <div id="updated"><span class="pulse"></span>加载中...</div>
 </header>
-
 <div class="grid" id="grid"></div>
-<div id="error" style="display:none">无法加载数据，请检查 data.json 是否存在</div>
+<div id="error" style="display:none">无法加载数据</div>
 
 <script>
+function toBeijing(str) {
+  // 把服务器UTC时间字符串转成北京时间显示
+  const d = new Date(str.replace(' ', 'T') + '+00:00');
+  return d.toLocaleString('zh-CN', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    hour12: false
+  });
+}
+
 async function load() {
   try {
     const res = await fetch('data.json?t=' + Date.now());
@@ -179,33 +144,41 @@ async function load() {
     const data = await res.json();
 
     document.getElementById('updated').innerHTML =
-      '<span class="pulse"></span>更新于 ' + data.updated_at;
+      '<span class="pulse"></span>更新于 ' + toBeijing(data.updated_at);
 
     const grid = document.getElementById('grid');
     grid.innerHTML = '';
 
-    // Sort: below threshold first
     data.items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
 
     data.items.forEach(item => {
-      const discount = item.priceSource
-        ? Math.round((1 - item.price / item.priceSource) * 100)
-        : 0;
+      const priceChange = item.price_change ?? 0;
+      const cutChange = item.cut_change ?? 0;
+
+      let priceBadge = '';
+      if (priceChange < 0) {
+        priceBadge = `<span class="badge down">↓¥${Math.abs(priceChange).toFixed(2)}</span>`;
+      } else if (priceChange > 0) {
+        priceBadge = `<span class="badge up">↑¥${priceChange.toFixed(2)}</span>`;
+      }
+
+      const cutBadge = cutChange > 0
+        ? `<span class="badge cut">+${cutChange}人砍价</span>` : '';
 
       const card = document.createElement('div');
       card.className = 'card' + (item.below_threshold ? ' alert' : '');
-
       card.innerHTML = `
         <div class="name">${item.name}</div>
         <div class="price-row">
           <span class="price ${item.below_threshold ? 'low' : ''}">¥${item.price.toFixed(2)}</span>
           <span class="price-source">¥${item.priceSource.toFixed(0)}</span>
         </div>
-        <div class="meta">
-          <span>已砍 ${discount}%</span>
-          <span>砍价 ${item.cutAmt} 人</span>
+        <div class="stats">
+          <div class="stat-row">
+            <span>过去5分钟：</span>${priceBadge || '<span style="color:#444">价格无变化</span>'}${cutBadge}
+          </div>
         </div>
-        ${item.threshold ? `<div class="threshold-line">目标价 <span>¥${item.threshold}</span>${item.below_threshold ? ' ✓ 已达到' : ''}</div>` : ''}
+        ${item.threshold ? `<div class="threshold-line">目标价 <span>¥${item.threshold}</span></div>` : ''}
       `;
       grid.appendChild(card);
     });
@@ -215,7 +188,7 @@ async function load() {
 }
 
 load();
-setInterval(load, 60000); // 每分钟自动刷新
+setInterval(load, 60000);
 </script>
 </body>
 </html>
