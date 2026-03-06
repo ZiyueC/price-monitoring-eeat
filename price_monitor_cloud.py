@@ -71,7 +71,7 @@ PRICE_ALERT = {
     "9124459592889225020": 60,   # 商品5
 }
 # 180s内砍价人数超过此值也发邮件
-CUT_ALERT_THRESHOLD = 4
+CUT_ALERT_THRESHOLD = 100
 
 # 历史价格记录文件
 DATA_FILE = "price_history.json"
