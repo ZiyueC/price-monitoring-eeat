@@ -225,21 +225,43 @@ def check_all():
 def export_data():
     """把当前价格数据导出为 data.json 供网页展示"""
     history = load_history()
+
+    # 读取上一次的 data.json 做对比
+    prev = {}
+    if os.path.exists("data.json"):
+        try:
+            with open("data.json", "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                for item in old_data.get("items", []):
+                    prev[item["id"]] = item
+        except:
+            pass
+
     output = {
         "updated_at": now(),
         "items": []
     }
     for gid, info in history.items():
         threshold = PRICE_ALERT.get(gid)
+        cur_price = info["price"]
+        cur_cut = info.get("cutAmt", 0)
+        prev_item = prev.get(gid, {})
+        prev_price = prev_item.get("price", cur_price)
+        prev_cut = prev_item.get("cutAmt", cur_cut)
+        price_change = round(cur_price - prev_price, 2)
+        cut_change = max(0, cur_cut - prev_cut)
+
         output["items"].append({
             "id": gid,
             "name": info["name"],
-            "price": info["price"],
+            "price": cur_price,
             "priceSource": info["priceSource"],
-            "cutAmt": info.get("cutAmt", 0),
+            "cutAmt": cur_cut,
+            "cut_change": cut_change,       # 过去5分钟新增砍价人数
+            "price_change": price_change,   # 过去5分钟价格变化
             "last_checked": info["last_checked"],
             "threshold": threshold,
-            "below_threshold": threshold is not None and info["price"] < threshold,
+            "below_threshold": threshold is not None and cur_price < threshold,
         })
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
