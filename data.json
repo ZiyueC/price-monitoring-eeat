@@ -1,13 +1,15 @@
 {
-  "updated_at": "2026-03-06 07:48:35",
+  "updated_at": "2026-03-06 07:58:05",
   "items": [
     {
       "id": "9202509241129140003",
       "name": "丰台丨串通一气【超值双人餐】",
-      "price": 44.65,
+      "price": 44.0,
       "priceSource": 128.0,
-      "cutAmt": 123,
-      "last_checked": "2026-03-06 07:48:27",
+      "cutAmt": 125,
+      "cut_change": 2,
+      "price_change": -0.65,
+      "last_checked": "2026-03-06 07:57:57",
       "threshold": 20,
       "below_threshold": false
     },
@@ -17,17 +19,21 @@
       "price": 47.13,
       "priceSource": 92.0,
       "cutAmt": 112,
-      "last_checked": "2026-03-06 07:48:28",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-06 07:57:58",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202511111247480001",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 125.88,
+      "price": 125.16,
       "priceSource": 228.0,
-      "cutAmt": 115,
-      "last_checked": "2026-03-06 07:48:29",
+      "cutAmt": 116,
+      "cut_change": 1,
+      "price_change": -0.72,
+      "last_checked": "2026-03-06 07:57:59",
       "threshold": 80,
       "below_threshold": false
     },
@@ -37,17 +43,21 @@
       "price": 11.28,
       "priceSource": 128.0,
       "cutAmt": 120,
-      "last_checked": "2026-03-06 07:48:34",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-06 07:58:04",
       "threshold": 15,
       "below_threshold": true
     },
     {
       "id": "9124459592889225020",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 86.97,
+      "price": 86.78,
       "priceSource": 188.0,
-      "cutAmt": 111,
-      "last_checked": "2026-03-06 07:48:35",
+      "cutAmt": 112,
+      "cut_change": 1,
+      "price_change": -0.19,
+      "last_checked": "2026-03-06 07:58:05",
       "threshold": 60,
       "below_threshold": false
     }
