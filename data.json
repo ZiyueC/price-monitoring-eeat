@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-06 14:49:50",
+  "updated_at": "2026-03-06 15:25:39",
   "items": [
     {
       "id": "9202509241129140003",
@@ -7,33 +7,33 @@
       "price": 24.26,
       "priceSource": 128.0,
       "cutAmt": 188,
-      "cut_change": 7,
-      "price_change": -2.31,
-      "last_checked": "2026-03-06 14:49:41",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-06 15:25:30",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202505161043360001",
       "name": "朝阳丨川宴豆花新村丨100元代金券（单桌、单次可用一张）",
-      "price": 23.27,
+      "price": 19.89,
       "priceSource": 92.0,
-      "cutAmt": 180,
+      "cutAmt": 192,
       "cut_change": 12,
-      "price_change": -4.07,
-      "last_checked": "2026-03-06 14:49:42",
+      "price_change": -3.38,
+      "last_checked": "2026-03-06 15:25:34",
       "threshold": 20,
-      "below_threshold": false
+      "below_threshold": true
     },
     {
       "id": "9202511111247480001",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 95.85,
+      "price": 94.37,
       "priceSource": 228.0,
-      "cutAmt": 180,
-      "cut_change": 10,
-      "price_change": -1.61,
-      "last_checked": "2026-03-06 14:49:43",
+      "cutAmt": 192,
+      "cut_change": 12,
+      "price_change": -1.48,
+      "last_checked": "2026-03-06 15:25:35",
       "threshold": 80,
       "below_threshold": false
     },
@@ -45,19 +45,19 @@
       "cutAmt": 120,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-06 14:49:49",
+      "last_checked": "2026-03-06 15:25:38",
       "threshold": 15,
       "below_threshold": true
     },
     {
       "id": "9124459592889225020",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 65.27,
+      "price": 60.61,
       "priceSource": 188.0,
-      "cutAmt": 174,
-      "cut_change": 10,
-      "price_change": -3.17,
-      "last_checked": "2026-03-06 14:49:50",
+      "cutAmt": 186,
+      "cut_change": 12,
+      "price_change": -4.66,
+      "last_checked": "2026-03-06 15:25:39",
       "threshold": 60,
       "below_threshold": false
     }
