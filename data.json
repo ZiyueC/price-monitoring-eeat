@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 05:11:14",
+  "updated_at": "2026-03-07 05:53:13",
   "items": [
     {
       "id": "9202509241129140003",
@@ -7,9 +7,9 @@
       "price": 56.67,
       "priceSource": 128.0,
       "cutAmt": 103,
-      "cut_change": 4,
-      "price_change": -1.24,
-      "last_checked": "2026-03-07 05:11:04",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 05:53:04",
       "threshold": 20,
       "below_threshold": false
     },
@@ -19,21 +19,21 @@
       "price": 51.6,
       "priceSource": 92.0,
       "cutAmt": 97,
-      "cut_change": 5,
-      "price_change": -1.46,
-      "last_checked": "2026-03-07 05:11:05",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 05:53:05",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202511111247480001",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 132.64,
+      "price": 132.43,
       "priceSource": 228.0,
-      "cutAmt": 92,
-      "cut_change": 5,
-      "price_change": -2.94,
-      "last_checked": "2026-03-07 05:11:06",
+      "cutAmt": 93,
+      "cut_change": 1,
+      "price_change": -0.21,
+      "last_checked": "2026-03-07 05:53:07",
       "threshold": 80,
       "below_threshold": false
     },
@@ -45,7 +45,7 @@
       "cutAmt": 33,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-07 05:11:13",
+      "last_checked": "2026-03-07 05:53:11",
       "threshold": 15,
       "below_threshold": true
     },
@@ -55,9 +55,9 @@
       "price": 92.66,
       "priceSource": 188.0,
       "cutAmt": 104,
-      "cut_change": 6,
-      "price_change": -2.22,
-      "last_checked": "2026-03-07 05:11:14",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 05:53:13",
       "threshold": 60,
       "below_threshold": false
     }
