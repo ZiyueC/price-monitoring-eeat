@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 11:18:46",
+  "updated_at": "2026-03-07 11:38:58",
   "items": [
     {
       "id": "9202509241129140003",
@@ -7,21 +7,21 @@
       "price": 44.48,
       "priceSource": 128.0,
       "cutAmt": 140,
-      "cut_change": 3,
-      "price_change": -1.25,
-      "last_checked": "2026-03-07 11:18:40",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 11:38:49",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202505161043360001",
       "name": "朝阳丨川宴豆花新村丨100元代金券（单桌、单次可用一张）",
-      "price": 37.34,
+      "price": 36.86,
       "priceSource": 92.0,
-      "cutAmt": 136,
-      "cut_change": 3,
-      "price_change": -1.46,
-      "last_checked": "2026-03-07 11:18:41",
+      "cutAmt": 137,
+      "cut_change": 1,
+      "price_change": -0.48,
+      "last_checked": "2026-03-07 11:38:50",
       "threshold": 20,
       "below_threshold": false
     },
@@ -31,9 +31,9 @@
       "price": 109.27,
       "priceSource": 228.0,
       "cutAmt": 134,
-      "cut_change": 3,
-      "price_change": -1.34,
-      "last_checked": "2026-03-07 11:18:42",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 11:38:52",
       "threshold": 80,
       "below_threshold": false
     },
@@ -45,19 +45,19 @@
       "cutAmt": 33,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-07 11:18:45",
+      "last_checked": "2026-03-07 11:38:56",
       "threshold": 15,
       "below_threshold": true
     },
     {
       "id": "9124459592889225020",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 81.99,
+      "price": 81.45,
       "priceSource": 188.0,
-      "cutAmt": 136,
-      "cut_change": 3,
-      "price_change": -0.78,
-      "last_checked": "2026-03-07 11:18:46",
+      "cutAmt": 137,
+      "cut_change": 1,
+      "price_change": -0.54,
+      "last_checked": "2026-03-07 11:38:58",
       "threshold": 60,
       "below_threshold": false
     }
