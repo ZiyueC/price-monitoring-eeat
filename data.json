@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 16:39:02",
+  "updated_at": "2026-03-07 16:58:26",
   "items": [
     {
       "id": "9202509241129140003",
@@ -8,8 +8,8 @@
       "priceSource": 128.0,
       "cutAmt": 26,
       "cut_change": 0,
-      "price_change": 76.09,
-      "last_checked": "2026-03-07 16:38:58",
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 16:58:22",
       "threshold": 20,
       "below_threshold": false
     },
@@ -20,32 +20,32 @@
       "priceSource": 92.0,
       "cutAmt": 30,
       "cut_change": 0,
-      "price_change": 64.71,
-      "last_checked": "2026-03-07 16:39:00",
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 16:58:23",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202511111247480001",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 200.93,
+      "price": 199.82,
       "priceSource": 228.0,
-      "cutAmt": 25,
-      "cut_change": 0,
-      "price_change": 107.67,
-      "last_checked": "2026-03-07 16:39:00",
+      "cutAmt": 26,
+      "cut_change": 1,
+      "price_change": -1.11,
+      "last_checked": "2026-03-07 16:58:24",
       "threshold": 80,
       "below_threshold": false
     },
     {
       "id": "9202508071003180001",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 118.98,
+      "price": 118.27,
       "priceSource": 128.0,
-      "cutAmt": 26,
-      "cut_change": 0,
-      "price_change": 117.98,
-      "last_checked": "2026-03-07 16:39:02",
+      "cutAmt": 28,
+      "cut_change": 2,
+      "price_change": -0.71,
+      "last_checked": "2026-03-07 16:58:25",
       "threshold": 15,
       "below_threshold": false
     },
@@ -56,8 +56,8 @@
       "priceSource": 188.0,
       "cutAmt": 32,
       "cut_change": 0,
-      "price_change": 87.59,
-      "last_checked": "2026-03-07 16:39:02",
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 16:58:26",
       "threshold": 60,
       "below_threshold": false
     }
