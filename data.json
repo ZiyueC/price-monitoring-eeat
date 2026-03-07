@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-07 18:19:51",
+  "updated_at": "2026-03-07 18:53:18",
   "items": [
     {
       "id": "9202509241129140003",
@@ -7,9 +7,9 @@
       "price": 97.3,
       "priceSource": 128.0,
       "cutAmt": 28,
-      "cut_change": 1,
-      "price_change": -1.66,
-      "last_checked": "2026-03-07 18:19:47",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 18:53:14",
       "threshold": 20,
       "below_threshold": false
     },
@@ -19,9 +19,9 @@
       "price": 82.24,
       "priceSource": 92.0,
       "cutAmt": 32,
-      "cut_change": 1,
-      "price_change": -0.15,
-      "last_checked": "2026-03-07 18:19:48",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 18:53:15",
       "threshold": 20,
       "below_threshold": false
     },
@@ -33,7 +33,7 @@
       "cutAmt": 29,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-07 18:19:49",
+      "last_checked": "2026-03-07 18:53:16",
       "threshold": 80,
       "below_threshold": false
     },
@@ -45,7 +45,7 @@
       "cutAmt": 30,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-07 18:19:50",
+      "last_checked": "2026-03-07 18:53:17",
       "threshold": 15,
       "below_threshold": false
     },
@@ -55,9 +55,9 @@
       "price": 148.52,
       "priceSource": 188.0,
       "cutAmt": 34,
-      "cut_change": 1,
-      "price_change": -1.22,
-      "last_checked": "2026-03-07 18:19:51",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-07 18:53:18",
       "threshold": 60,
       "below_threshold": false
     }
