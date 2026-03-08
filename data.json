@@ -1,15 +1,15 @@
 {
-  "updated_at": "2026-03-08 19:39:32",
+  "updated_at": "2026-03-08 19:54:40",
   "items": [
     {
       "id": "9202509241129140003",
       "name": "丰台丨串通一气【超值双人餐】",
-      "price": 104.15,
+      "price": 103.7,
       "priceSource": 128.0,
-      "cutAmt": 33,
+      "cutAmt": 34,
       "cut_change": 1,
-      "price_change": -1.66,
-      "last_checked": "2026-03-08 19:39:28",
+      "price_change": -0.45,
+      "last_checked": "2026-03-08 19:54:35",
       "threshold": 20,
       "below_threshold": false
     },
@@ -21,7 +21,7 @@
       "cutAmt": 27,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-08 19:39:29",
+      "last_checked": "2026-03-08 19:54:36",
       "threshold": 20,
       "below_threshold": false
     },
@@ -33,7 +33,7 @@
       "cutAmt": 30,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-08 19:39:30",
+      "last_checked": "2026-03-08 19:54:38",
       "threshold": 80,
       "below_threshold": false
     },
@@ -45,7 +45,7 @@
       "cutAmt": 29,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-08 19:39:31",
+      "last_checked": "2026-03-08 19:54:39",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,7 +57,7 @@
       "cutAmt": 31,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-08 19:39:32",
+      "last_checked": "2026-03-08 19:54:40",
       "threshold": 60,
       "below_threshold": false
     }
