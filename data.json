@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12 07:31:20",
+  "updated_at": "2026-03-12 08:04:39",
   "items": [
     {
       "id": "9202509241129140003",
@@ -9,19 +9,19 @@
       "cutAmt": 110,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-12 07:31:15",
+      "last_checked": "2026-03-12 08:04:34",
       "threshold": 20,
       "below_threshold": false
     },
     {
       "id": "9202505161043360001",
       "name": "朝阳丨川宴豆花新村丨100元代金券（单桌、单次可用一张）",
-      "price": 46.85,
+      "price": 46.73,
       "priceSource": 92.0,
-      "cutAmt": 115,
-      "cut_change": 0,
-      "price_change": 0.0,
-      "last_checked": "2026-03-12 07:31:16",
+      "cutAmt": 116,
+      "cut_change": 1,
+      "price_change": -0.12,
+      "last_checked": "2026-03-12 08:04:35",
       "threshold": 20,
       "below_threshold": false
     },
@@ -33,19 +33,19 @@
       "cutAmt": 108,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-12 07:31:18",
+      "last_checked": "2026-03-12 08:04:36",
       "threshold": 80,
       "below_threshold": false
     },
     {
       "id": "9202508071003180001",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 81.88,
+      "price": 81.72,
       "priceSource": 128.0,
-      "cutAmt": 105,
-      "cut_change": 0,
-      "price_change": 0.0,
-      "last_checked": "2026-03-12 07:31:18",
+      "cutAmt": 106,
+      "cut_change": 1,
+      "price_change": -0.16,
+      "last_checked": "2026-03-12 08:04:38",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,7 +57,7 @@
       "cutAmt": 106,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-12 07:31:20",
+      "last_checked": "2026-03-12 08:04:39",
       "threshold": 60,
       "below_threshold": false
     }
