@@ -109,6 +109,18 @@
   .threshold-line { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); margin-top: 0.5rem; }
   .threshold-line span { color: var(--accent-dim); }
   #error { max-width: 900px; margin: 3rem auto; text-align: center; color: var(--muted); }
+  #bej48Btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 0.4rem 0.9rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  #bej48Btn:hover { border-color: var(--accent); color: var(--accent); }
   #refreshBtn {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
@@ -133,6 +145,7 @@
 <body>
 <header>
   <h1>食时 · 砍价监控</h1>
+  <div style="display:flex;gap:0.6rem;align-items:center"><button id="bej48Btn" onclick="toggleBej48()">BEJ48 关</button><button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button></div>
   <button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button>
   <div id="updated"><span class="pulse"></span>加载中...</div>
 </header>
@@ -149,6 +162,18 @@ function toBeijing(str) {
     hour: '2-digit', minute: '2-digit', second: '2-digit',
     hour12: false
   });
+}
+
+const BEJ48_IDS = ['9202505161043360001'];
+let bej48On = false;
+
+function toggleBej48() {
+  bej48On = !bej48On;
+  const btn = document.getElementById('bej48Btn');
+  btn.textContent = 'BEJ48 ' + (bej48On ? '开' : '关');
+  btn.style.borderColor = bej48On ? 'var(--accent)' : '';
+  btn.style.color = bej48On ? 'var(--accent)' : '';
+  renderCards(window._lastData);
 }
 
 async function load() {
@@ -168,9 +193,17 @@ async function load() {
     const grid = document.getElementById('grid');
     grid.innerHTML = '';
 
-    data.items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
+    window._lastData = data;
+    renderCards(data);
+}
 
-    data.items.forEach(item => {
+function renderCards(data) {
+  if (!data) return;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  const items = data.items.filter(item => bej48On || !BEJ48_IDS.includes(item.id));
+  items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
+  items.forEach(item => {
       const priceChange = item.price_change ?? 0;
       const cutChange = item.cut_change ?? 0;
 
@@ -201,7 +234,7 @@ async function load() {
       `;
       grid.appendChild(card);
     });
-  } catch(e) {
+  if (false) { } } catch(e) {
     document.getElementById('error').style.display = 'block';
   }
 }
