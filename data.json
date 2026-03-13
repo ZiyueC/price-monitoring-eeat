@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 07:08:33",
+  "updated_at": "2026-03-13 07:21:31",
   "items": [
     {
       "id": "9202509241129140003",
@@ -7,9 +7,9 @@
       "price": 53.16,
       "priceSource": 128.0,
       "cutAmt": 102,
-      "cut_change": 5,
-      "price_change": -1.55,
-      "last_checked": "2026-03-13 07:08:29",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-13 07:21:27",
       "threshold": 20,
       "below_threshold": false
     },
@@ -19,8 +19,8 @@
       "price": 52.26,
       "priceSource": 92.0,
       "cutAmt": 104,
-      "cut_change": 1,
-      "price_change": -0.3,
+      "cut_change": 0,
+      "price_change": 0.0,
       "last_checked": "2026-03-13 07:08:31",
       "threshold": 20,
       "below_threshold": false
@@ -31,21 +31,21 @@
       "price": 131.17,
       "priceSource": 228.0,
       "cutAmt": 102,
-      "cut_change": 3,
-      "price_change": -0.75,
-      "last_checked": "2026-03-13 07:08:31",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-13 07:21:27",
       "threshold": 80,
       "below_threshold": false
     },
     {
       "id": "9202508071003180001",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 83.42,
+      "price": 82.71,
       "priceSource": 128.0,
-      "cutAmt": 102,
+      "cutAmt": 103,
       "cut_change": 1,
-      "price_change": -0.36,
-      "last_checked": "2026-03-13 07:08:33",
+      "price_change": -0.71,
+      "last_checked": "2026-03-13 07:21:29",
       "threshold": 15,
       "below_threshold": false
     },
@@ -55,9 +55,21 @@
       "price": 93.25,
       "priceSource": 188.0,
       "cutAmt": 110,
-      "cut_change": 2,
-      "price_change": -0.79,
-      "last_checked": "2026-03-13 07:08:33",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-13 07:21:30",
+      "threshold": 60,
+      "below_threshold": false
+    },
+    {
+      "id": "9202512051326170001",
+      "name": "驻京办餐厅|不踩雷|现炒|剁椒鱼头双人餐",
+      "price": 85.47,
+      "priceSource": 168.0,
+      "cutAmt": 104,
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-13 07:21:31",
       "threshold": 60,
       "below_threshold": false
     }
