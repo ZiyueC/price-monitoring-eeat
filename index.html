@@ -180,6 +180,7 @@ function renderCards(data) {
         <div class="stat-row">
           <span>过去5分钟：</span>${priceBadge || '<span style="color:#444">价格无变化</span>'}${cutBadge}
         </div>
+        ${item.store !== undefined ? `<div class="stat-row"><span style="color:#888">剩余库存：</span><span style="color:${item.store <= 1 ? '#ff6b6b' : '#aaa'}">${item.store} 件</span></div>` : ''}
       </div>
       ${item.threshold ? `<div class="threshold-line">目标价 <span>¥${item.threshold}</span></div>` : ''}
     `;
