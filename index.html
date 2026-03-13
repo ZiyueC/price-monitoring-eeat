@@ -109,18 +109,6 @@
   .threshold-line { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: var(--muted); margin-top: 0.5rem; }
   .threshold-line span { color: var(--accent-dim); }
   #error { max-width: 900px; margin: 3rem auto; text-align: center; color: var(--muted); }
-  #bej48Btn {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    padding: 0.4rem 0.9rem;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  #bej48Btn:hover { border-color: var(--accent); color: var(--accent); }
   #refreshBtn {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
@@ -145,7 +133,7 @@
 <body>
 <header>
   <h1>食时 · 砍价监控</h1>
-  <div style="display:flex;gap:0.6rem;align-items:center"><button id="bej48Btn" onclick="toggleBej48()">BEJ48 关</button><button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button></div>
+  <button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button>
   <button id="refreshBtn" onclick="triggerAction()">🔄 立即更新</button>
   <div id="updated"><span class="pulse"></span>加载中...</div>
 </header>
@@ -154,26 +142,49 @@
 
 <script>
 function toBeijing(str) {
-  // 把服务器UTC时间字符串转成北京时间显示
   const d = new Date(str.replace(' ', 'T') + '+00:00');
   return d.toLocaleString('zh-CN', {
-    timeZone: 'Asia/Shanghai',
-    year: 'numeric', month: '2-digit', day: '2-digit',
-    hour: '2-digit', minute: '2-digit', second: '2-digit',
-    hour12: false
+    timeZone: 'Asia/Shanghai', year:'numeric', month:'2-digit', day:'2-digit',
+    hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false
   });
 }
 
 const BEJ48_IDS = ['9202505161043360001'];
-let bej48On = false;
+const BEJ48_ENABLED = false; // 改成 true 开启 BEJ48 组显示
 
-function toggleBej48() {
-  bej48On = !bej48On;
-  const btn = document.getElementById('bej48Btn');
-  btn.textContent = 'BEJ48 ' + (bej48On ? '开' : '关');
-  btn.style.borderColor = bej48On ? 'var(--accent)' : '';
-  btn.style.color = bej48On ? 'var(--accent)' : '';
-  renderCards(window._lastData);
+function renderCards(data) {
+  if (!data) return;
+  const grid = document.getElementById('grid');
+  grid.innerHTML = '';
+  const items = data.items.filter(item => BEJ48_ENABLED || !BEJ48_IDS.includes(item.id));
+  items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
+  items.forEach(item => {
+    const priceChange = item.price_change ?? 0;
+    const cutChange = item.cut_change ?? 0;
+    let priceBadge = '';
+    if (priceChange < 0) {
+      priceBadge = `<span class="badge down">↓¥${Math.abs(priceChange).toFixed(2)}</span>`;
+    } else if (priceChange > 0) {
+      priceBadge = `<span class="badge up">↑¥${priceChange.toFixed(2)}</span>`;
+    }
+    const cutBadge = cutChange > 0 ? `<span class="badge cut">+${cutChange}人砍价</span>` : '';
+    const card = document.createElement('div');
+    card.className = 'card' + (item.below_threshold ? ' alert' : '');
+    card.innerHTML = `
+      <div class="name">${item.name}</div>
+      <div class="price-row">
+        <span class="price ${item.below_threshold ? 'low' : ''}">¥${item.price.toFixed(2)}</span>
+        <span class="price-source">¥${item.priceSource.toFixed(0)}</span>
+      </div>
+      <div class="stats">
+        <div class="stat-row">
+          <span>过去5分钟：</span>${priceBadge || '<span style="color:#444">价格无变化</span>'}${cutBadge}
+        </div>
+      </div>
+      ${item.threshold ? `<div class="threshold-line">目标价 <span>¥${item.threshold}</span></div>` : ''}
+    `;
+    grid.appendChild(card);
+  });
 }
 
 async function load() {
@@ -181,7 +192,6 @@ async function load() {
     const res = await fetch('data.json?t=' + Date.now());
     if (!res.ok) throw new Error();
     const data = await res.json();
-
     const now = new Date().toLocaleString('zh-CN', {
       timeZone: 'Asia/Shanghai', year:'numeric', month:'2-digit', day:'2-digit',
       hour:'2-digit', minute:'2-digit', second:'2-digit', hour12: false
@@ -189,52 +199,9 @@ async function load() {
     document.getElementById('updated').innerHTML =
       '<span class="pulse"></span>价格更新于 ' + toBeijing(data.updated_at) +
       ' &nbsp;|&nbsp; 页面刷新于 ' + now;
-
-    const grid = document.getElementById('grid');
-    grid.innerHTML = '';
-
     window._lastData = data;
     renderCards(data);
-}
-
-function renderCards(data) {
-  if (!data) return;
-  const grid = document.getElementById('grid');
-  grid.innerHTML = '';
-  const items = data.items.filter(item => bej48On || !BEJ48_IDS.includes(item.id));
-  items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
-  items.forEach(item => {
-      const priceChange = item.price_change ?? 0;
-      const cutChange = item.cut_change ?? 0;
-
-      let priceBadge = '';
-      if (priceChange < 0) {
-        priceBadge = `<span class="badge down">↓¥${Math.abs(priceChange).toFixed(2)}</span>`;
-      } else if (priceChange > 0) {
-        priceBadge = `<span class="badge up">↑¥${priceChange.toFixed(2)}</span>`;
-      }
-
-      const cutBadge = cutChange > 0
-        ? `<span class="badge cut">+${cutChange}人砍价</span>` : '';
-
-      const card = document.createElement('div');
-      card.className = 'card' + (item.below_threshold ? ' alert' : '');
-      card.innerHTML = `
-        <div class="name">${item.name}</div>
-        <div class="price-row">
-          <span class="price ${item.below_threshold ? 'low' : ''}">¥${item.price.toFixed(2)}</span>
-          <span class="price-source">¥${item.priceSource.toFixed(0)}</span>
-        </div>
-        <div class="stats">
-          <div class="stat-row">
-            <span>过去5分钟：</span>${priceBadge || '<span style="color:#444">价格无变化</span>'}${cutBadge}
-          </div>
-        </div>
-        ${item.threshold ? `<div class="threshold-line">目标价 <span>¥${item.threshold}</span></div>` : ''}
-      `;
-      grid.appendChild(card);
-    });
-  if (false) { } } catch(e) {
+  } catch(e) {
     document.getElementById('error').style.display = 'block';
   }
 }
@@ -247,9 +214,7 @@ async function triggerAction() {
   btn.disabled = true;
   btn.textContent = '⏳ 触发中...';
   try {
-    const res = await fetch('https://eateat-motinor.ellerycn.workers.dev/', {
-      method: 'POST'
-    });
+    const res = await fetch('https://eateat-motinor.ellerycn.workers.dev/', { method: 'POST' });
     const data = await res.json();
     if (data.status === 204) {
       btn.textContent = '✅ 已触发，约30秒后刷新';
