@@ -48,7 +48,7 @@ TANTANG_RQTOKEN_DEFAULT = "5846b7227dc6f87235982ff64b18d13a"
 
 # ===================== 通用配置 =====================
 
-CUT_ALERT_THRESHOLD = 4
+CUT_ALERT_THRESHOLD = 20
 DATA_FILE = "price_history.json"
 TANTANG_DATA_FILE = "tantang_history.json"
 
