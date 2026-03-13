@@ -72,7 +72,7 @@ GOODS_LIST = [
 
 # 监控间隔（秒），建议不低于 60
 
-# BEJ48 分组开关（False = 不监控 bej48 组商品）
+# BEJ48 分组开关，True = 监控商品2并发邮件，False = 忽略
 BEJ48_ENABLED = False
 
 # 各商品邮件触发价格阈值（低于此价格发邮件）
@@ -184,9 +184,6 @@ def send_email(subject, message):
 def check_all():
     history = load_history()
     for goods in GOODS_LIST:
-        # BEJ48 开关
-        if goods.get("group") == "bej48" and not BEJ48_ENABLED:
-            continue
         gid = goods["id"]
         result = fetch_price(goods)
         if result is None:
@@ -205,11 +202,13 @@ def check_all():
 
             # 邮件触发判断
             threshold = PRICE_ALERT.get(gid)
+            is_bej48 = gid == "9202505161043360001"
             reasons = []
-            if threshold and cur_price < threshold:
-                reasons.append(f"当前价格 ¥{cur_price} 低于目标价 ¥{threshold}")
-            if new_cuts >= CUT_ALERT_THRESHOLD:
-                reasons.append(f"180s内新增砍价 {new_cuts} 人")
+            if not is_bej48 or BEJ48_ENABLED:
+                if threshold and cur_price < threshold:
+                    reasons.append(f"当前价格 ¥{cur_price} 低于目标价 ¥{threshold}")
+                if new_cuts >= CUT_ALERT_THRESHOLD:
+                    reasons.append(f"180s内新增砍价 {new_cuts} 人")
             if reasons:
                 short_name = name[:10]
                 if threshold and cur_price < threshold:
@@ -222,7 +221,8 @@ def check_all():
             print(f"[{now()}] 🆕 {name}: ¥{cur_price}（原价¥{src_price}）")
             # 首次记录也检查价格阈值
             threshold = PRICE_ALERT.get(gid)
-            if threshold and cur_price < threshold:
+            is_bej48 = gid == "9202505161043360001"
+            if threshold and cur_price < threshold and (not is_bej48 or BEJ48_ENABLED):
                 subject = f"食时-{name[:10]}-价格低于¥{threshold}"
                 body = name + "\n当前价格：¥" + str(cur_price) + "\n首次检测即低于目标价¥" + str(threshold)
                 send_email(subject, body)
