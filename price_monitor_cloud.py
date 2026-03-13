@@ -35,7 +35,7 @@ BEJ48_ENABLED = False  # 改成 True 开启 BEJ48 组监控
 
 TANTANG_GOODS_LIST = [
     {"activitygoods_id": 18422, "threshold": 70,  "rqtoken": "dc0f603723711bef0596ae21368f19b4"},  # 鸿宾楼水煮鱼
-    {"activitygoods_id": 24270, "threshold": 50,  "rqtoken": "06cbb399d8e46f0dd0b2641f6f9b58de"},
+    {"activitygoods_id": 24270, "threshold": 45,  "rqtoken": "06cbb399d8e46f0dd0b2641f6f9b58de"},
     {"activitygoods_id": 21878, "threshold": 35,  "rqtoken": "3b25e384bd1c0ae3fcbe794a78e457d3"},
     {"activitygoods_id": 39230, "threshold": 70,  "rqtoken": "2a4003e9e58891e855ebaeb2c54455f4"},
     {"activitygoods_id": 35560, "threshold": 55,  "rqtoken": "5b6284f9965b882cfbd2f40e23b3dd28"},
