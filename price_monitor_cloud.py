@@ -30,6 +30,7 @@ GOODS_LIST = [
         "sign": "08e66b7e0f0a736aea13feb20f90e53a",
         "lat": 39.904689788818359,
         "lon": 116.40717315673828,
+        "group": "bej48",
     },
     {
         "id": "9202511111247480001",
@@ -58,20 +59,33 @@ GOODS_LIST = [
         "lat": 39.904689788818359,
         "lon": 116.40717315673828,
     },
+    {
+        "id": "9202512051326170001",
+        "name": "商品6",
+        "shareUid": "9202507292239220004",
+        "uid": "9202507292239220004",
+        "sign": "a9f60f3f5360caa482c6519d8807fda0",
+        "lat": 39.904689788818359,
+        "lon": 116.40717315673828,
+    },
 ]
 
 # 监控间隔（秒），建议不低于 60
 
+# BEJ48 分组开关（False = 不监控 bej48 组商品）
+BEJ48_ENABLED = False
+
 # 各商品邮件触发价格阈值（低于此价格发邮件）
 PRICE_ALERT = {
     "9202509241129140003": 20,   # 商品1
-    "9202505161043360001": 20,   # 商品2
+    "9202505161043360001": 20,   # 商品2（bej48组）
     "9202511111247480001": 80,   # 商品3
     "9202508071003180001": 15,   # 商品4
     "9124459592889225020": 60,   # 商品5
+    "9202512051326170001": 60,   # 商品6
 }
 # 180s内砍价人数超过此值也发邮件
-CUT_ALERT_THRESHOLD = 100
+CUT_ALERT_THRESHOLD = 4
 
 # 历史价格记录文件
 DATA_FILE = "price_history.json"
@@ -170,6 +184,9 @@ def send_email(subject, message):
 def check_all():
     history = load_history()
     for goods in GOODS_LIST:
+        # BEJ48 开关
+        if goods.get("group") == "bej48" and not BEJ48_ENABLED:
+            continue
         gid = goods["id"]
         result = fetch_price(goods)
         if result is None:
