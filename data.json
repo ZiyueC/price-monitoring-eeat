@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13 20:51:04",
+  "updated_at": "2026-03-13 21:24:20",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 30,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:42",
+      "last_checked": "2026-03-13 21:24:04",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 31,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:44",
+      "last_checked": "2026-03-13 21:24:05",
       "threshold": null,
       "below_threshold": false
     },
@@ -36,7 +36,7 @@
       "cutAmt": 31,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:45",
+      "last_checked": "2026-03-13 21:24:06",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 28,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:47",
+      "last_checked": "2026-03-13 21:24:07",
       "threshold": 15,
       "below_threshold": false
     },
@@ -62,7 +62,7 @@
       "cutAmt": 30,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:48",
+      "last_checked": "2026-03-13 21:24:08",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 32,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:50",
+      "last_checked": "2026-03-13 21:24:09",
       "threshold": 60,
       "below_threshold": false
     },
@@ -87,7 +87,7 @@
       "priceSource": 422.0,
       "store": 2,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:52",
+      "last_checked": "2026-03-13 21:24:11",
       "threshold": 70,
       "below_threshold": false
     },
@@ -95,11 +95,11 @@
       "id": "tt_24270",
       "source": "tantang",
       "name": "花乡 I 小苗家宴·京味菜·烤鸭  I 【水煮鱼】欢聚2-3人餐",
-      "price": 114.0,
+      "price": 112.0,
       "priceSource": 357.0,
       "store": 1,
-      "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:54",
+      "price_change": -2.0,
+      "last_checked": "2026-03-13 21:24:12",
       "threshold": 45,
       "below_threshold": false
     },
@@ -107,11 +107,11 @@
       "id": "tt_21878",
       "source": "tantang",
       "name": "丰台区 I  香融府·烤鸭·家常菜  I   双人套餐",
-      "price": 51.6,
+      "price": 51.3,
       "priceSource": 202.0,
       "store": 3,
-      "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:56",
+      "price_change": -0.3,
+      "last_checked": "2026-03-13 21:24:14",
       "threshold": 35,
       "below_threshold": false
     },
@@ -123,7 +123,7 @@
       "priceSource": 393.0,
       "store": 2,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:50:59",
+      "last_checked": "2026-03-13 21:24:16",
       "threshold": 70,
       "below_threshold": false
     },
@@ -135,7 +135,7 @@
       "priceSource": 321.0,
       "store": 1,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:51:01",
+      "last_checked": "2026-03-13 21:24:18",
       "threshold": 55,
       "below_threshold": false
     },
@@ -147,7 +147,7 @@
       "priceSource": 285.0,
       "store": 1,
       "price_change": 0.0,
-      "last_checked": "2026-03-13 20:51:04",
+      "last_checked": "2026-03-13 21:24:20",
       "threshold": 40,
       "below_threshold": false
     }
