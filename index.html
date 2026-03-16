@@ -155,7 +155,7 @@ function renderCards(data) {
   if (!data) return;
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
-  const items = data.items.filter(item => BEJ48_ENABLED || !BEJ48_IDS.includes(item.id));
+  const items = data.items.filter(item => (BEJ48_ENABLED || !BEJ48_IDS.includes(item.id)) && !item.id.startsWith('tt_'));
   items.sort((a, b) => (b.below_threshold ? 1 : 0) - (a.below_threshold ? 1 : 0));
   items.forEach(item => {
     const priceChange = item.price_change ?? 0;
