@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-22 19:59:20",
+  "updated_at": "2026-03-22 20:39:44",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 33,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:06",
+      "last_checked": "2026-03-22 20:39:26",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 38,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:07",
+      "last_checked": "2026-03-22 20:39:28",
       "threshold": null,
       "below_threshold": false
     },
@@ -36,7 +36,7 @@
       "cutAmt": 43,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:08",
+      "last_checked": "2026-03-22 20:39:29",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 36,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:09",
+      "last_checked": "2026-03-22 20:39:30",
       "threshold": 15,
       "below_threshold": false
     },
@@ -62,7 +62,7 @@
       "cutAmt": 41,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:10",
+      "last_checked": "2026-03-22 20:39:32",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 35,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-22 19:59:11",
+      "last_checked": "2026-03-22 20:39:33",
       "threshold": 60,
       "below_threshold": false
     },
