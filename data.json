@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-28 11:44:49",
+  "updated_at": "2026-03-28 12:02:30",
   "items": [
     {
       "id": "9202509241129140003",
@@ -8,9 +8,9 @@
       "price": 37.49,
       "priceSource": 128.0,
       "cutAmt": 153,
-      "cut_change": 1,
-      "price_change": -0.59,
-      "last_checked": "2026-03-28 11:44:34",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-28 12:02:13",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 149,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-03-28 11:44:35",
+      "last_checked": "2026-03-28 12:02:15",
       "threshold": null,
       "below_threshold": false
     },
@@ -34,9 +34,9 @@
       "price": 105.77,
       "priceSource": 228.0,
       "cutAmt": 154,
-      "cut_change": 1,
-      "price_change": -0.36,
-      "last_checked": "2026-03-28 11:44:36",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-28 12:02:16",
       "threshold": 80,
       "below_threshold": false
     },
@@ -47,9 +47,9 @@
       "price": 67.03,
       "priceSource": 128.0,
       "cutAmt": 145,
-      "cut_change": 1,
-      "price_change": -0.38,
-      "last_checked": "2026-03-28 11:44:38",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-28 12:02:18",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 76.22,
       "priceSource": 188.0,
       "cutAmt": 157,
-      "cut_change": 1,
-      "price_change": -0.53,
-      "last_checked": "2026-03-28 11:44:39",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-28 12:02:19",
       "threshold": 60,
       "below_threshold": false
     },
@@ -73,9 +73,9 @@
       "price": 69.4,
       "priceSource": 168.0,
       "cutAmt": 144,
-      "cut_change": 1,
-      "price_change": -0.04,
-      "last_checked": "2026-03-28 11:44:40",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-03-28 12:02:20",
       "threshold": 60,
       "below_threshold": false
     },
