@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-05 18:23:07",
+  "updated_at": "2026-04-05 19:09:23",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 20,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:50",
+      "last_checked": "2026-04-05 19:09:07",
       "threshold": 20,
       "below_threshold": false
     },
@@ -18,12 +18,12 @@
       "id": "9202505161043360001",
       "source": "shishi",
       "name": "朝阳丨川宴豆花新村丨100元代金券（单桌、单次可用一张）",
-      "price": 81.99,
+      "price": 81.27,
       "priceSource": 92.0,
-      "cutAmt": 25,
-      "cut_change": 0,
-      "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:52",
+      "cutAmt": 26,
+      "cut_change": 1,
+      "price_change": -0.72,
+      "last_checked": "2026-04-05 19:09:08",
       "threshold": null,
       "below_threshold": false
     },
@@ -36,7 +36,7 @@
       "cutAmt": 23,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:53",
+      "last_checked": "2026-04-05 19:09:10",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 28,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:55",
+      "last_checked": "2026-04-05 19:09:11",
       "threshold": 15,
       "below_threshold": false
     },
@@ -62,7 +62,7 @@
       "cutAmt": 28,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:56",
+      "last_checked": "2026-04-05 19:09:12",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 27,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-05 18:22:57",
+      "last_checked": "2026-04-05 19:09:14",
       "threshold": 60,
       "below_threshold": false
     },
