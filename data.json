@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16 19:53:41",
+  "updated_at": "2026-04-16 20:45:18",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 13,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:25",
+      "last_checked": "2026-04-16 20:45:02",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 15,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:26",
+      "last_checked": "2026-04-16 20:45:03",
       "threshold": null,
       "below_threshold": false
     },
@@ -36,7 +36,7 @@
       "cutAmt": 18,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:28",
+      "last_checked": "2026-04-16 20:45:05",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 123.63,
+      "price": 123.26,
       "priceSource": 128.0,
-      "cutAmt": 21,
-      "cut_change": 0,
-      "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:29",
+      "cutAmt": 22,
+      "cut_change": 1,
+      "price_change": -0.37,
+      "last_checked": "2026-04-16 20:45:06",
       "threshold": 15,
       "below_threshold": false
     },
@@ -62,7 +62,7 @@
       "cutAmt": 21,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:31",
+      "last_checked": "2026-04-16 20:45:07",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 14,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-16 19:53:32",
+      "last_checked": "2026-04-16 20:45:08",
       "threshold": 60,
       "below_threshold": false
     },
