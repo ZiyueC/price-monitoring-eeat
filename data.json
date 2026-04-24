@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24 14:06:51",
+  "updated_at": "2026-04-24 15:36:23",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 3,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-24 14:06:35",
+      "last_checked": "2026-04-24 15:36:03",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 142,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-24 14:06:36",
+      "last_checked": "2026-04-24 15:36:04",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 101.25,
+      "price": 94.46,
       "priceSource": 228.0,
-      "cutAmt": 156,
-      "cut_change": 9,
-      "price_change": -5.09,
-      "last_checked": "2026-04-24 14:06:37",
+      "cutAmt": 172,
+      "cut_change": 16,
+      "price_change": -6.79,
+      "last_checked": "2026-04-24 15:36:05",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 134,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-24 14:06:38",
+      "last_checked": "2026-04-24 15:36:07",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,25 +57,25 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 66.07,
+      "price": 57.37,
       "priceSource": 188.0,
-      "cutAmt": 153,
-      "cut_change": 8,
-      "price_change": -3.82,
-      "last_checked": "2026-04-24 14:06:39",
+      "cutAmt": 172,
+      "cut_change": 19,
+      "price_change": -8.7,
+      "last_checked": "2026-04-24 15:36:11",
       "threshold": 60,
-      "below_threshold": false
+      "below_threshold": true
     },
     {
       "id": "9202512051326170001",
       "source": "shishi",
       "name": "驻京办餐厅|不踩雷|现炒|剁椒鱼头双人餐",
-      "price": 54.67,
+      "price": 45.91,
       "priceSource": 168.0,
-      "cutAmt": 156,
-      "cut_change": 12,
-      "price_change": -5.92,
-      "last_checked": "2026-04-24 14:06:43",
+      "cutAmt": 177,
+      "cut_change": 21,
+      "price_change": -8.76,
+      "last_checked": "2026-04-24 15:36:15",
       "threshold": 60,
       "below_threshold": true
     },
