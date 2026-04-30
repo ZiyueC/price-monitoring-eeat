@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30 18:59:14",
+  "updated_at": "2026-04-30 20:15:42",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 8,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-30 18:59:00",
+      "last_checked": "2026-04-30 20:15:29",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 8,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-04-30 18:59:01",
+      "last_checked": "2026-04-30 20:15:31",
       "threshold": null,
       "below_threshold": false
     },
@@ -34,9 +34,9 @@
       "price": 204.49,
       "priceSource": 228.0,
       "cutAmt": 19,
-      "cut_change": 4,
-      "price_change": -6.99,
-      "last_checked": "2026-04-30 18:59:02",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-04-30 20:15:32",
       "threshold": 80,
       "below_threshold": false
     },
@@ -47,9 +47,9 @@
       "price": 106.87,
       "priceSource": 128.0,
       "cutAmt": 22,
-      "cut_change": 4,
-      "price_change": -5.17,
-      "last_checked": "2026-04-30 18:59:04",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-04-30 20:15:33",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 155.45,
       "priceSource": 188.0,
       "cutAmt": 22,
-      "cut_change": 4,
-      "price_change": -6.24,
-      "last_checked": "2026-04-30 18:59:05",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-04-30 20:15:34",
       "threshold": 60,
       "below_threshold": false
     },
@@ -73,9 +73,9 @@
       "price": 147.68,
       "priceSource": 168.0,
       "cutAmt": 23,
-      "cut_change": 4,
-      "price_change": -4.28,
-      "last_checked": "2026-04-30 18:59:06",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-04-30 20:15:35",
       "threshold": 60,
       "below_threshold": false
     },
