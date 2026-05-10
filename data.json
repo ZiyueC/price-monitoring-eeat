@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-10 12:39:01",
+  "updated_at": "2026-05-10 14:07:45",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-10 12:38:47",
+      "last_checked": "2026-05-10 14:07:33",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-10 12:38:48",
+      "last_checked": "2026-05-10 14:07:34",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 116.17,
+      "price": 108.87,
       "priceSource": 228.0,
-      "cutAmt": 131,
-      "cut_change": 4,
-      "price_change": -2.33,
-      "last_checked": "2026-05-10 12:38:49",
+      "cutAmt": 142,
+      "cut_change": 11,
+      "price_change": -7.3,
+      "last_checked": "2026-05-10 14:07:35",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 129,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-10 12:38:50",
+      "last_checked": "2026-05-10 14:07:36",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,12 +57,12 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 78.9,
+      "price": 73.52,
       "priceSource": 188.0,
-      "cutAmt": 126,
-      "cut_change": 3,
-      "price_change": -1.06,
-      "last_checked": "2026-05-10 12:38:52",
+      "cutAmt": 138,
+      "cut_change": 12,
+      "price_change": -5.38,
+      "last_checked": "2026-05-10 14:07:37",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 3,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-10 12:38:53",
+      "last_checked": "2026-05-10 14:07:37",
       "threshold": 60,
       "below_threshold": false
     },
