@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-12 19:20:10",
+  "updated_at": "2026-05-12 20:55:22",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 3,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-12 19:19:54",
+      "last_checked": "2026-05-12 20:55:06",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 1,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-12 19:19:55",
+      "last_checked": "2026-05-12 20:55:08",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 191.26,
+      "price": 190.49,
       "priceSource": 228.0,
-      "cutAmt": 36,
-      "cut_change": 0,
-      "price_change": 0.0,
-      "last_checked": "2026-05-12 19:19:57",
+      "cutAmt": 37,
+      "cut_change": 1,
+      "price_change": -0.77,
+      "last_checked": "2026-05-12 20:55:09",
       "threshold": 80,
       "below_threshold": false
     },
@@ -49,7 +49,7 @@
       "cutAmt": 33,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-12 19:19:58",
+      "last_checked": "2026-05-12 20:55:10",
       "threshold": 15,
       "below_threshold": false
     },
@@ -62,7 +62,7 @@
       "cutAmt": 31,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-12 19:19:59",
+      "last_checked": "2026-05-12 20:55:12",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-12 19:20:01",
+      "last_checked": "2026-05-12 20:55:13",
       "threshold": 60,
       "below_threshold": false
     },
