@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-14 18:52:49",
+  "updated_at": "2026-05-14 20:25:15",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-14 18:52:36",
+      "last_checked": "2026-05-14 20:25:01",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-14 18:52:38",
+      "last_checked": "2026-05-14 20:25:02",
       "threshold": null,
       "below_threshold": false
     },
@@ -34,9 +34,9 @@
       "price": 209.34,
       "priceSource": 228.0,
       "cutAmt": 22,
-      "cut_change": 6,
-      "price_change": -6.43,
-      "last_checked": "2026-05-14 18:52:39",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-05-14 20:25:03",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 112.12,
+      "price": 111.81,
       "priceSource": 128.0,
-      "cutAmt": 21,
-      "cut_change": 6,
-      "price_change": -6.16,
-      "last_checked": "2026-05-14 18:52:40",
+      "cutAmt": 22,
+      "cut_change": 1,
+      "price_change": -0.31,
+      "last_checked": "2026-05-14 20:25:04",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,12 +57,12 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 168.63,
+      "price": 166.0,
       "priceSource": 188.0,
-      "cutAmt": 15,
-      "cut_change": 6,
-      "price_change": -8.55,
-      "last_checked": "2026-05-14 18:52:41",
+      "cutAmt": 16,
+      "cut_change": 1,
+      "price_change": -2.63,
+      "last_checked": "2026-05-14 20:25:05",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 4,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-14 18:52:42",
+      "last_checked": "2026-05-14 20:25:07",
       "threshold": 60,
       "below_threshold": false
     },
