@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23 09:56:28",
+  "updated_at": "2026-05-23 11:16:57",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-23 09:56:16",
+      "last_checked": "2026-05-23 11:16:45",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 7,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-23 09:56:17",
+      "last_checked": "2026-05-23 11:16:46",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 111.06,
+      "price": 110.08,
       "priceSource": 228.0,
-      "cutAmt": 129,
-      "cut_change": 11,
-      "price_change": -6.37,
-      "last_checked": "2026-05-23 09:56:18",
+      "cutAmt": 131,
+      "cut_change": 2,
+      "price_change": -0.98,
+      "last_checked": "2026-05-23 11:16:47",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 43.29,
+      "price": 41.69,
       "priceSource": 128.0,
-      "cutAmt": 127,
-      "cut_change": 9,
-      "price_change": -3.35,
-      "last_checked": "2026-05-23 09:56:19",
+      "cutAmt": 131,
+      "cut_change": 4,
+      "price_change": -1.6,
+      "last_checked": "2026-05-23 11:16:48",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 76.05,
       "priceSource": 188.0,
       "cutAmt": 130,
-      "cut_change": 11,
-      "price_change": -4.69,
-      "last_checked": "2026-05-23 09:56:20",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-05-23 11:16:49",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 6,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-23 09:56:21",
+      "last_checked": "2026-05-23 11:16:50",
       "threshold": 60,
       "below_threshold": false
     },
