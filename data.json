@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-24 17:43:14",
+  "updated_at": "2026-05-24 18:51:18",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 6,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-24 17:42:58",
+      "last_checked": "2026-05-24 18:51:07",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 4,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-24 17:43:00",
+      "last_checked": "2026-05-24 18:51:08",
       "threshold": null,
       "below_threshold": false
     },
@@ -34,9 +34,9 @@
       "price": 200.17,
       "priceSource": 228.0,
       "cutAmt": 21,
-      "cut_change": 7,
-      "price_change": -9.93,
-      "last_checked": "2026-05-24 17:43:01",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-05-24 18:51:09",
       "threshold": 80,
       "below_threshold": false
     },
@@ -47,9 +47,9 @@
       "price": 105.65,
       "priceSource": 128.0,
       "cutAmt": 31,
-      "cut_change": 7,
-      "price_change": -9.84,
-      "last_checked": "2026-05-24 17:43:03",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-05-24 18:51:10",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,12 +57,12 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 152.28,
+      "price": 149.35,
       "priceSource": 188.0,
-      "cutAmt": 23,
-      "cut_change": 6,
-      "price_change": -8.95,
-      "last_checked": "2026-05-24 17:43:04",
+      "cutAmt": 24,
+      "cut_change": 1,
+      "price_change": -2.93,
+      "last_checked": "2026-05-24 18:51:11",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-05-24 17:43:05",
+      "last_checked": "2026-05-24 18:51:12",
       "threshold": 60,
       "below_threshold": false
     },
