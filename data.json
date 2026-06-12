@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 18:31:17",
+  "updated_at": "2026-06-12 20:38:03",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 7,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-12 18:31:01",
+      "last_checked": "2026-06-12 20:37:48",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-12 18:31:03",
+      "last_checked": "2026-06-12 20:37:50",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 204.06,
+      "price": 203.55,
       "priceSource": 228.0,
-      "cutAmt": 26,
-      "cut_change": 10,
-      "price_change": -12.06,
-      "last_checked": "2026-06-12 18:31:04",
+      "cutAmt": 27,
+      "cut_change": 1,
+      "price_change": -0.51,
+      "last_checked": "2026-06-12 20:37:51",
       "threshold": 80,
       "below_threshold": false
     },
@@ -47,9 +47,9 @@
       "price": 113.09,
       "priceSource": 128.0,
       "cutAmt": 21,
-      "cut_change": 8,
-      "price_change": -5.25,
-      "last_checked": "2026-06-12 18:31:05",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-06-12 20:37:52",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,12 +57,12 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 160.86,
+      "price": 157.67,
       "priceSource": 188.0,
-      "cutAmt": 24,
-      "cut_change": 9,
-      "price_change": -12.25,
-      "last_checked": "2026-06-12 18:31:07",
+      "cutAmt": 26,
+      "cut_change": 2,
+      "price_change": -3.19,
+      "last_checked": "2026-06-12 20:37:53",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-12 18:31:08",
+      "last_checked": "2026-06-12 20:37:54",
       "threshold": 60,
       "below_threshold": false
     },
