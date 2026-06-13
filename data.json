@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-13 14:22:21",
+  "updated_at": "2026-06-13 15:56:19",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 7,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-13 14:22:09",
+      "last_checked": "2026-06-13 15:55:52",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-13 14:22:10",
+      "last_checked": "2026-06-13 15:55:53",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 102.78,
+      "price": 87.43,
       "priceSource": 228.0,
-      "cutAmt": 149,
-      "cut_change": 15,
-      "price_change": -8.71,
-      "last_checked": "2026-06-13 14:22:11",
+      "cutAmt": 183,
+      "cut_change": 34,
+      "price_change": -15.35,
+      "last_checked": "2026-06-13 15:55:55",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 32.78,
+      "price": 15.47,
       "priceSource": 128.0,
-      "cutAmt": 148,
-      "cut_change": 18,
-      "price_change": -6.5,
-      "last_checked": "2026-06-13 14:22:12",
+      "cutAmt": 184,
+      "cut_change": 36,
+      "price_change": -17.31,
+      "last_checked": "2026-06-13 15:55:56",
       "threshold": 15,
       "below_threshold": false
     },
@@ -57,14 +57,14 @@
       "id": "9124459592889225020",
       "source": "shishi",
       "name": "海淀四季青|红菜苔.楚菜|鸿运当头大湖鱼头双人商务套餐",
-      "price": 69.71,
+      "price": 51.3,
       "priceSource": 188.0,
-      "cutAmt": 153,
-      "cut_change": 18,
-      "price_change": -6.33,
-      "last_checked": "2026-06-13 14:22:13",
+      "cutAmt": 195,
+      "cut_change": 42,
+      "price_change": -18.41,
+      "last_checked": "2026-06-13 15:56:01",
       "threshold": 60,
-      "below_threshold": false
+      "below_threshold": true
     },
     {
       "id": "9202512051326170001",
@@ -75,7 +75,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-06-13 14:22:14",
+      "last_checked": "2026-06-13 15:56:02",
       "threshold": 60,
       "below_threshold": false
     },
