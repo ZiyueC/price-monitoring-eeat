@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12 18:36:22",
+  "updated_at": "2026-07-12 19:48:05",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 4,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-12 18:36:10",
+      "last_checked": "2026-07-12 19:47:51",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 5,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-12 18:36:12",
+      "last_checked": "2026-07-12 19:47:52",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 210.94,
+      "price": 210.5,
       "priceSource": 228.0,
-      "cutAmt": 23,
-      "cut_change": 5,
-      "price_change": -4.59,
-      "last_checked": "2026-07-12 18:36:12",
+      "cutAmt": 24,
+      "cut_change": 1,
+      "price_change": -0.44,
+      "last_checked": "2026-07-12 19:47:54",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 108.86,
+      "price": 108.04,
       "priceSource": 128.0,
-      "cutAmt": 20,
-      "cut_change": 5,
-      "price_change": -4.26,
-      "last_checked": "2026-07-12 18:36:14",
+      "cutAmt": 21,
+      "cut_change": 1,
+      "price_change": -0.82,
+      "last_checked": "2026-07-12 19:47:55",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 161.91,
       "priceSource": 188.0,
       "cutAmt": 27,
-      "cut_change": 5,
-      "price_change": -9.27,
-      "last_checked": "2026-07-12 18:36:15",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-07-12 19:47:56",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 8,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-12 18:36:16",
+      "last_checked": "2026-07-12 19:47:57",
       "threshold": 60,
       "below_threshold": false
     },
