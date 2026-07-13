@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13 18:05:00",
+  "updated_at": "2026-07-13 19:44:52",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 5,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-13 18:04:44",
+      "last_checked": "2026-07-13 19:44:39",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 2,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-13 18:04:46",
+      "last_checked": "2026-07-13 19:44:40",
       "threshold": null,
       "below_threshold": false
     },
@@ -31,12 +31,12 @@
       "id": "9202511111247480001",
       "source": "shishi",
       "name": "海淀国家图书馆【荆楚味道】原价428元清蒸大白刁双人餐",
-      "price": 200.76,
+      "price": 198.93,
       "priceSource": 228.0,
-      "cutAmt": 26,
-      "cut_change": 20,
-      "price_change": -26.27,
-      "last_checked": "2026-07-13 18:04:47",
+      "cutAmt": 27,
+      "cut_change": 1,
+      "price_change": -1.83,
+      "last_checked": "2026-07-13 19:44:41",
       "threshold": 80,
       "below_threshold": false
     },
@@ -47,9 +47,9 @@
       "price": 100.81,
       "priceSource": 128.0,
       "cutAmt": 29,
-      "cut_change": 20,
-      "price_change": -26.75,
-      "last_checked": "2026-07-13 18:04:49",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-07-13 19:44:42",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 154.82,
       "priceSource": 188.0,
       "cutAmt": 28,
-      "cut_change": 20,
-      "price_change": -30.87,
-      "last_checked": "2026-07-13 18:04:50",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-07-13 19:44:43",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-13 18:04:51",
+      "last_checked": "2026-07-13 19:44:44",
       "threshold": 60,
       "below_threshold": false
     },
