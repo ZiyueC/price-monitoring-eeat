@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27 20:05:30",
+  "updated_at": "2026-07-27 21:21:37",
   "items": [
     {
       "id": "9202509241129140003",
@@ -10,7 +10,7 @@
       "cutAmt": 4,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-27 20:05:17",
+      "last_checked": "2026-07-27 21:21:25",
       "threshold": 20,
       "below_threshold": false
     },
@@ -23,7 +23,7 @@
       "cutAmt": 10,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-27 20:05:18",
+      "last_checked": "2026-07-27 21:21:26",
       "threshold": null,
       "below_threshold": false
     },
@@ -34,9 +34,9 @@
       "price": 202.69,
       "priceSource": 228.0,
       "cutAmt": 24,
-      "cut_change": 1,
-      "price_change": -1.74,
-      "last_checked": "2026-07-27 20:05:20",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-07-27 21:21:27",
       "threshold": 80,
       "below_threshold": false
     },
@@ -44,12 +44,12 @@
       "id": "9202508071003180001",
       "source": "shishi",
       "name": "大钟寺丨蜀道山【经典川味】双人餐",
-      "price": 111.06,
+      "price": 110.46,
       "priceSource": 128.0,
-      "cutAmt": 19,
+      "cutAmt": 20,
       "cut_change": 1,
-      "price_change": -0.57,
-      "last_checked": "2026-07-27 20:05:21",
+      "price_change": -0.6,
+      "last_checked": "2026-07-27 21:21:28",
       "threshold": 15,
       "below_threshold": false
     },
@@ -60,9 +60,9 @@
       "price": 159.61,
       "priceSource": 188.0,
       "cutAmt": 25,
-      "cut_change": 1,
-      "price_change": -1.19,
-      "last_checked": "2026-07-27 20:05:22",
+      "cut_change": 0,
+      "price_change": 0.0,
+      "last_checked": "2026-07-27 21:21:29",
       "threshold": 60,
       "below_threshold": false
     },
@@ -75,7 +75,7 @@
       "cutAmt": 3,
       "cut_change": 0,
       "price_change": 0.0,
-      "last_checked": "2026-07-27 20:05:23",
+      "last_checked": "2026-07-27 21:21:31",
       "threshold": 60,
       "below_threshold": false
     },
